@@ -142,6 +142,10 @@ body{
     background-color: #ffffff50;
 }
 
+.categories{
+    margin-top: 10%;
+}
+
 .category-container{
     margin: 4% 0%;
     cursor: pointer;
