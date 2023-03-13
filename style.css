@@ -1,0 +1,262 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f1014;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100vh;
+    align-items: center;
+    padding-top: 3%;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-logo-container{
+    margin-bottom: 8em;
+    cursor: pointer;
+    background-image: url(https://img1.hotstarext.com/image/upload/f_auto,q_90,w_64/v1656431456/web-images/logo-d-plus.svg);
+    height: 10%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-text{
+    display: none;
+    position: absolute;
+    left: 4em;
+    width: 5em;
+    cursor: pointer;
+}
+
+.nav-link-container:hover  .nav-text{
+    display: block;
+}
+
+
+.icon{
+    height: 25px;
+}
+
+.nav-link:hover{
+    filter: brightness(300%);
+    filter: drop-shadow(0px 0px 20px white);
+}
+
+.main-content{
+    margin-left: 11%;
+    margin-bottom: 5%;
+    margin-right: 1%;
+}
+
+.hero-section{
+    height: 80vh;
+    background-image: linear-gradient(180deg, rgba(15, 16, 20, 0) 61.45%, rgba(15, 16, 20, 0.7) 79.99%, #0F1014 99.88%), linear-gradient(270.41deg, rgba(15, 16, 20, 0) 50.16%, rgba(15, 16, 20, 0.7) 75.08%, #0F1014 99.69%),url("https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/3981/1463981-i-76197ed0f4b9");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.hero-section .hero-release-details{
+    padding-top: 30%;
+}
+
+.hero-section p{
+    padding: 1% 0%;
+    max-width: 40%;
+}
+
+.age-eligibility{
+    background-color: #ffffff21;
+    padding: 2%;
+    border-radius: 4px;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .watch-now-button{
+    background-color: #ffffff21;
+    color: #ffffff;
+}
+
+.hero-section .watch-now-button:hover{
+    background-color: #ffffff50;
+}
+
+.watch-now-button{
+    display: flex;
+    background-color: #ffffff;
+    color: #0f1014;
+    padding: 0.6em 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.watch-now-button:hover{
+    scale: 1.05;
+}
+
+.button-container .watch-now-button{
+    width: 20em;
+}
+
+.watch-now-button span{
+    margin-left: 1%;
+}
+
+.plus-button{
+    background-color: #ffffff21;
+    color: #ffffff;
+    padding: 0.86% 1%;
+    margin-left: 2%;
+    border-radius: 4px;
+}
+
+.plus-button:hover{
+    scale: 1.05;
+    background-color: #ffffff50;
+}
+
+.category-container{
+    margin: 4% 0%;
+    cursor: pointer;
+}
+
+.category-container h2{
+    margin-bottom: 1%;
+}
+
+.category-cards-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 1%;
+}
+
+.category-card{
+    position: relative;
+}
+
+.card-heading{
+    text-align: center;
+    margin-bottom: 4%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-heading p{
+    position: relative;
+    top: 90%;
+}
+
+.category-card:hover > .card-contents{
+    display: block;
+}
+
+.category-card:hover > .card-heading{
+    height: 30vh;
+}
+
+.category-card:hover{
+    background-color: #18191d;
+    width: 150%;
+    top: -15%;
+    right: 30%;
+    z-index: 2;
+}
+
+.category-card:last-child:hover{
+    right: 50%;
+}
+
+.category-card:first-child:hover{
+    left: 0;
+}
+
+
+
+.card-contents {
+    padding: 0% 3%;
+    display: none;
+}
+
+.card-contents p{
+    margin: 5% 0%;
+    font-weight: 100;
+    font-size: small;
+}
+
+.footer{
+    margin-top: 15%;
+}
+
+.footer p{
+    font-weight: 200;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 5%;
+} 
+
+.footer .social-icons{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.footer-links h4{
+    margin-bottom: 20%;
+}
+
+.footer-links p{
+    margin: 10% 0%;
+    cursor: pointer;
+}
+
+.privacy-policy{
+    width: 50%;
+}
+
+.footer .links{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.target{
+    padding-bottom: 14%;
+}
+
+.target + p{
+    padding-bottom: 7%;
+}
